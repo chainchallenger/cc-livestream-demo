@@ -21,6 +21,7 @@ import PageOverview from "./views/Following/PageOverview";
 import PageLive from "./views/Following/PageLive";
 import PageVideos from "./views/Following/PageVideos";
 import PageCategories from "./views/Following/PageCategories";
+import Live from "./views/Live/Live";
 
 const App = () => {
   const { darkStatus, sideBarStatus } = useSelector((state) => state.site);
@@ -39,7 +40,7 @@ const App = () => {
   }, [mySize]);
 
   return (
-    <ThemeProvider theme={darkStatus ? darkTheme : lightTheme}>
+    <ThemeProvider theme={darkStatus ? lightTheme : darkTheme}>
       <GlobalStyles />
       <div className="app">
         <Header mySize={mySize} />
@@ -61,6 +62,7 @@ const App = () => {
               <Route index element={<PageAllCategories />} />
               <Route path="all" element={<PageAllLive />} />
             </Route>
+            <Route path="/live" element={<Live />} />
           </Routes>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { StyledSlide } from "./Slide.styled";
 
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import { GiPauseButton } from "react-icons/gi";
@@ -21,9 +22,12 @@ const Slide = () => {
             <img src={users[4].liveScreen} />
             <img src={users[5].liveScreen} />
 
+            
             <div className="one">
               <div className="img">
-                <img src={users[1].liveScreen} />
+                <Link to="/live" className="link">
+                  <img src="../public/images/games/game-fortnite.png" /> 
+                </Link>
                 <div className="screen-icons">
                   <div className="left">
                     <GiPauseButton className="icon-screen" />
@@ -43,22 +47,20 @@ const Slide = () => {
                 <div className="info-top">
                   <div className="profile">
                     <div className="pp">
-                      <img src="https://i.pravatar.cc/50" />
+                      <img src="../public/images/profiles/profile-yellowpanther.png" />
                     </div>
                     <div className="profile-info">
-                      <div className="username">JonSnow</div>
-                      <div className="game">Dota 2</div>
-                      <div className="viewers">297 viewers</div>
+                      <div className="username">Yellowpanther</div>
+                      <div className="game">Fortnite</div>
+                      <div className="viewers">110.3k followers</div>
                     </div>
                   </div>
                   <div className="tags">
                     <div className="tag">Esports</div>
-                    <div className="tag">English</div>
+                    <div className="tag">MMORPG</div>
                   </div>
                 </div>
                 <div className="info-bottom">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. A,
-                  consequatur blanditiis consequuntur ipsa tempore
                 </div>
               </div>
             </div>

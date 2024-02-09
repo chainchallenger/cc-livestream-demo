@@ -110,6 +110,7 @@ export const StyledCategoriesDesktop = styled.div`
       font-size: 18px;
       font-weight: 500;
       padding: 5px 0;
+      color: ${(props) => props.theme.textColor};
 
       span {
         cursor: pointer;

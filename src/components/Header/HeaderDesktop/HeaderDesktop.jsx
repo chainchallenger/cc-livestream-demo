@@ -10,6 +10,7 @@ import { FaEllipsisV } from "react-icons/fa";
 import { BiSearch, BiMessageAlt, BiArchive } from "react-icons/bi";
 import { CgCrown } from "react-icons/cg";
 
+
 // Components
 import ProfileDesktop from "./ProfileDesktop";
 import SideBar from "./SideBar";
@@ -28,8 +29,7 @@ const HeaderDesktop = ({ mySize }) => {
                   <div className="item">
                     <Link to="/">
                       <div className="logo">
-                        <div className="logo-bg" />
-                        <BsTwitch />
+                        <img src="../../../../public/images/logo.png" id="logo"/>
                       </div>
                     </Link>
                   </div>

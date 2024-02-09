@@ -1,25 +1,16 @@
 import { StyledSideBarListItem } from "./SideBarList.styled";
 
-import { FaCircle } from "react-icons/fa";
-
-const SideBarListItem = ({ user, imageId }) => {
+const SideBarListItem = ({ stream }) => {
   return (
     <StyledSideBarListItem>
       <li>
         <div className="item">
           <div className="pp">
-            <img src={`https://i.pravatar.cc/5${imageId}`} />
+            <img src={stream.pp} />
           </div>
           <div className="hover-section">
             <div className="info">
-              <div className="username">{user.username}</div>
-              <div className="title">{user.game}</div>
-            </div>
-            <div className="live">
-              <div className="live-icon">
-                <FaCircle />
-              </div>
-              <span>333</span>
+              <div className="username">{stream.title}</div>
             </div>
           </div>
         </div>

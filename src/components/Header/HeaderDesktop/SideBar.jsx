@@ -6,7 +6,6 @@ import { setSideBarStatus } from "../../../store/site";
 
 // React icons
 import { BiArrowFromLeft, BiHeart } from "react-icons/bi";
-import { MdOutlineVideocam } from "react-icons/md";
 
 // Components
 import SideBarList from "./SideBarList";
@@ -24,7 +23,7 @@ const SideBar = ({ mySize }) => {
         }`}
       >
         <div className="list-title">
-          <h1>Followed Channels</h1>
+          <h1>Trending Games</h1>
           <div
             className="title-icon"
             onClick={() => dispatch(setSideBarStatus(!sideBarStatus))}
@@ -38,12 +37,15 @@ const SideBar = ({ mySize }) => {
         <SideBarList />
 
         <div className="list-title">
-          <h1>Recommended Channels</h1>
-          <div className="camera">
-            <MdOutlineVideocam />
-          </div>
+          <h1>Language</h1>
         </div>
-        <SideBarList />
+        <ul className="language">
+          <li><input type="checkbox"/>English</li>
+          <li><input type="checkbox"/>Bahasa Indonesia</li>
+          <li><input type="checkbox"/>Català</li>
+          <li><input type="checkbox"/>Dansk</li>
+          <li><input type="checkbox"/>中文</li>
+        </ul>
         <div className="side-search">
           <Search placeholder={"Search to Add Friends"} />
         </div>

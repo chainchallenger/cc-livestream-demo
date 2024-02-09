@@ -74,6 +74,10 @@ export const StyledHeaderDesktop = styled.header`
                   background-color: #fff;
                   border-bottom-right-radius: 8px;
                 }
+
+                img{
+                  max-height: 50px;
+                }
               }
 
               .item-icon {

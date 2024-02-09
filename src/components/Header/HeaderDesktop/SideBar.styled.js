@@ -13,6 +13,23 @@ export const StyledSideBar = styled.div`
     padding-top: 60px;
     transition: 0.3s;
 
+    .language{
+      color: ${(props) => props.theme.textColor};
+      overflow: hidden;
+      
+    }
+
+    li{
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap; 
+
+      input{
+        margin-right: 3px;
+      }
+    }
+
     .list-title {
       display: flex;
       align-items: center;

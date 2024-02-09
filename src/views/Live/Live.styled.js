@@ -50,6 +50,12 @@ export const StyledBrowse = styled.div`
     display: none;
 
     .live-box {
+      @media (max-width: 1200px) {
+        margin-left: 100px;
+      }
+      @media (max-width: 1400px) {
+        margin-left: 0px;
+      }
       margin-left: 180px;
       width: 100%
       display: none;
@@ -79,15 +85,13 @@ export const StyledBrowse = styled.div`
           color: #fcfaff;
           font-weight: bold;
           background-color: #0B9EFF;
+          cursor: pointer;
         }
 
       }
 
       .stream {
-        img {
-          max-width: 1100px;
-        }
-        
+        max-width: 1100px;
       }
 
       .donation {

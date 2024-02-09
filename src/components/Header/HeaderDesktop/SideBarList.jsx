@@ -5,15 +5,15 @@ import SideBarListItem from "./SideBarListItem";
 import { useSelector } from "react-redux";
 
 const SideBarList = () => {
-  const { users } = useSelector((state) => state.user);
+  const { games } = useSelector((state) => state.game);
 
   return (
     <StyledSideBarList>
       <div className="list">
         <ul>
-          {users.map((user, index) => {
+          {games.map((game, index) => {
             if (index > 4) return;
-            return <SideBarListItem user={user} key={index} imageId={index} />;
+            return <SideBarListItem stream={game}/>;
           })}
         </ul>
         <div className="show-more">
